@@ -47,7 +47,7 @@ const Movies = () => {
         const fetchPosts = async () => {
             setLoading(true);
             if (loadOnce){
-                const res = await movies$.then(res => {
+                await movies$.then(res => {
                     setPosts(res);
                     setLoading(false);
                 })
@@ -66,8 +66,7 @@ const Movies = () => {
 
         const deleteMovie = () => {
 
-
-            if (deleteOnce != false){
+            if (deleteOnce !== false){
                 if(sortedData.length > 0) {
                     /** TODO a refaire: Pas propre du tout  **/
                     let indexOfMovie = sortedData.findIndex((movie) => {
