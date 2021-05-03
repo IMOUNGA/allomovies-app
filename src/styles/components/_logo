@@ -1,0 +1,86 @@
+.wrapper_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: tomato;
+
+  h3 {
+    font-size: 4rem;
+    animation: 3s linear 0s infinite alternate shadowlight;
+
+    &::after {
+      content: "ALLOMOVIES";
+      position: absolute;
+      color: white;
+      left: 50%;
+      transform: translateX(-49%);
+      animation: 3s linear 0s infinite alternate textMove;
+    }
+  }
+
+  p {
+    font-weight: bold;
+    font-size: .8em;
+    animation: 6s linear 0s 1 alternate surpriseImHere ;
+  }
+
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .wrapper_logo {
+    h3{
+      font-size: 2.5rem;
+    }
+
+
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .wrapper_logo {
+    h3{
+      font-size: 3rem;
+    }
+
+
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .wrapper_logo {
+    h3{
+      font-size: 4rem;
+    }
+
+
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { }
+
+
+
+/** Keyframes **/
+@keyframes shadowlight {
+  from { text-shadow: 0 2px 5px $color-shadow-box }
+  to { text-shadow: 0 2px 15px $color-shadow-box }
+}
+
+@keyframes textMove {
+  from { transform: translateX(-49%) }
+  to { transform: translateX(-48%) }
+}
+
+@keyframes surpriseImHere {
+  from { opacity: 0}
+  to { opacity: 1 }
+}
+

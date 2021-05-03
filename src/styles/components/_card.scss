@@ -1,0 +1,263 @@
+.card {
+  position: relative;
+  /*height: 155px;*/
+  margin: 15px;
+  box-shadow: 0 0 10px black;
+  transition: 0.3s;
+  overflow: hidden;
+  border-radius: 4px;
+
+  &:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 20px $color-primary;
+    z-index: 2;
+    animation: .5s ease-in 0s 1 normal supaShine;
+  }
+
+  &:hover:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.02s;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .cards-list {
+    margin-top: 30px;
+  }
+
+  img {
+    width: 250px;
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+
+  .card-infos-container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .2s;
+    opacity: 0;
+    color: $color-text-card;
+    z-index: 1;
+
+    &:hover {
+      opacity: 1;
+
+      ul {
+        transform: scaleY(1);
+        z-index: 20;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      text-align: center;
+
+      height: 100%;
+      width: 100%;
+
+      z-index: 20;
+      transform: scaleY(0.3);
+
+      li {
+        width: 100%;
+      }
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: 1s;
+      }
+
+    }
+  }
+
+  .movie-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .likes-dislikes-infos-container {
+    display: flex;
+    justify-content: center;
+
+    .likes-dislikes {
+      display: flex;
+      margin: 10px auto;
+
+      button {
+        position: relative;
+        margin-right: 5px;
+        z-index: 99;
+
+        width: 20px;
+        height: 20px;
+
+        border: none;
+        border-radius: 28%;
+        background-color: white;
+        background-position: center;
+        background-size: cover;
+
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+
+      .button-active {
+        background-color: $color-primary;
+      }
+
+      #button-like {
+        background-image: url("../../assets/like.png");
+      }
+
+      #button-dislike {
+        background-image: url("../../assets/dislike.png");
+      }
+
+      img {
+        width: 23px;
+        background: white;
+        border-radius: 52%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-primary;
+        }
+      }
+    }
+
+  }
+
+  .ratio-bar-wrapper {
+    background-color: #f7f7f7;
+    width: 70% !important;
+    margin: 0 auto;
+
+    .ratio-bar {
+      position: relative;
+      background-color: $color-primary;
+      height: 6px;
+      z-index: auto;
+    }
+  }
+
+  .button-delete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 15%;
+    z-index: 99;
+    cursor: pointer;
+
+    background-image: url("../../assets/poubelle.png");
+    background-size: cover;
+    background-position: center;
+
+    border: none;
+    border-radius: 0 0 3px 3px;
+
+    &:hover{
+
+    }
+  }
+}
+
+.img-4 {
+  width: 250px !important;
+}
+
+.img-8 {
+  width: 234px !important;
+}
+
+.img-12 {
+  width: 180px !important;
+}
+
+.card-12 {
+  height: 120px !important;
+}
+
+@keyframes supaShine {
+  0% {
+    box-shadow: 0px 0px 0px white;
+  }
+
+  70% {
+    box-shadow: 0px 0px 50px red;
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px $color-primary;
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .card {
+    width: 225px;
+  }
+
+  .img-4 {
+    width: 225px !important;
+  }
+
+  .img-8 {
+    width: 164px !important;
+  }
+
+  .img-12 {
+    width: 97px !important;
+  }
+
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .img-8 {
+    width: 164px !important;
+  }
+
+  .img-12 {
+    width: 145px !important;
+  }
+
+  .card-12 {
+    height: 120px !important;
+  }
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { }

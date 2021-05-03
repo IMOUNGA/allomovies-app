@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&family=Roboto:ital@1&display=swap');
+
+$font-1: "Girassol", sans-serif; // Titre Site
+$font-2: "Roboto", sans-serif; // Texte classique
+
+$background-color: #f7f7f7;
+$color-text-card: #fff;
+$color-primary: tomato;
+$color-shadow-box: pink;
+
+$filters-ul-display: flex;
+$filters-li-display: flex;
+$filters-li-align-items: center;
+$filters-li-m: 10px;
+$filters-input-mr: 5px;
+
+$section-mb: 15px;
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  font-family: $font-2;
+  background-color: $background-color;
+  color: $color-primary;
+}
+
+li {
+  list-style-type: none;
+}
+
+#root {
+  height: 100%;
+  position: relative;
+}

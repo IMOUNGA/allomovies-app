@@ -1,0 +1,38 @@
+.pagination {
+    margin: 20px;
+    .page-item {
+        .page-link {
+            position: relative;
+            color: white;
+            margin-right: 10px;
+            background-color: $color-primary;
+            padding: 10px;
+            border-radius: 50%;
+            text-decoration: none;
+            
+            &:hover {
+                animation: .5s ease-in 0s infinite normal shine;
+            }
+            
+
+        }
+
+        .pageActive {
+            background-color: white;
+            color: $color-primary;
+        }
+    }
+}
+
+@keyframes shine {
+    from {
+        top: 0;
+        box-shadow: 0 0px 10px $color-shadow-box;
+    }
+
+    to {
+        top: 5px;
+        box-shadow: 0 2px 2px red;
+    }
+}
+
