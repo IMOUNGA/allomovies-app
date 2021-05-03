@@ -223,6 +223,7 @@ const Movies = () => {
                        loading={loading}
                        sortedData={sortedData}
                        postsPerPage={postsPerPage}
+                       deleteOneMovie={deleteOneMovie}
                 />
                 <Pagine
                     postsPerPage={postsPerPage}

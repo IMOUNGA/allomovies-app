@@ -1,7 +1,5 @@
 import React, { useState, useEffect} from 'react';
 
-import DeleteImage from '../assets/poubelle.png';
-
 const Card = ({ movie, setDeleteMovieCard }) => {
     const [like, setLike] = useState(movie.likes);
     const [dislike, setDislike] = useState(movie.dislikes);
@@ -47,7 +45,7 @@ const Card = ({ movie, setDeleteMovieCard }) => {
 
         switch (vote) {
             case null:
-                if (buttonName == 'like'){
+                if (buttonName === 'like'){
                     setLike(like + 1);
                     setVote(true);
                     button.classList.add('button-active');
@@ -58,7 +56,7 @@ const Card = ({ movie, setDeleteMovieCard }) => {
                 }
                 break;
             case true:
-                if (buttonName == 'like'){
+                if (buttonName === 'like'){
                     setLike(like - 1);
                     setVote(null);
                     button.classList.remove('button-active');
@@ -70,7 +68,7 @@ const Card = ({ movie, setDeleteMovieCard }) => {
                 }
                 break;
             case false:
-                if (buttonName == 'like'){
+                if (buttonName === 'like'){
                     setLike(like + 1);
                     setDislike(dislike - 1);
                     setVote(true);

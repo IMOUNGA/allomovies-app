@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from "../components/Logo";
-import Movies from "../components/Movies";
 import {NavLink} from "react-router-dom";
 
 const NotFound = () => {

@@ -5,7 +5,7 @@ const Posts = ({posts, loading, sortedData, deleteOneMovie}) => {
     const [deleteMovie, setDeleteMovie] = useState(false);
 
     useEffect(() => {
-        if (deleteMovie != false) {
+        if (deleteMovie !== false) {
             deleteOneMovie(deleteMovie)
             setDeleteMovie(false);
         }
