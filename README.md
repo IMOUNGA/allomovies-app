@@ -30,7 +30,6 @@ votre équipe.
 [x] Système de pagination : Choix du nombre d'élements affichés par page (4, 8 ou 12) <br>
 
 <b>Améliorer/Bugs</b> <br>
-[*] Système de pagination : Boutons précédent/suivant au lieu de 1,2,3,etc <br>
 [*] <b>Bug</b> -> Selectionner 8 element par page / Aller en page 2 / Selectionner 12 element par page. Faire en sorte de revenir
 à la page 1 a chaque changement de nombre d'elements<br>
 [*] <b>Bug</b> -> Non respect de la pagination lorsque l'on active tous les filtres <br>

@@ -13,10 +13,6 @@ const Pagine = ({postsPerPage, totalPosts, paginate, currentPage}) => {
 
         const paginePrevNext = () => {
 
-            console.log('pageNumbers = ' + pageNumbers.length);
-            console.log('position = ' + position)
-            console.log('currentPage = ' + currentPage);
-
             if (position > 0 || position < pageNumbers.length) {
                 console.log('Next / Prev');
                 paginate(position);
@@ -40,7 +36,6 @@ const Pagine = ({postsPerPage, totalPosts, paginate, currentPage}) => {
             }
 
         }
-
 
         paginePrevNext();
         disabledButton();
