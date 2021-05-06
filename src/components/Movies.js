@@ -26,17 +26,12 @@ const Movies = () => {
     const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
     // Change page
-    const paginate = (e, pageNumber) => {
+    const paginate = (pageNumber) => {
 
-        const active = document.querySelector('.pageActive');
-
-        if (active !== null){
-            active.classList.remove('pageActive');
-        }
-
-        e.target.classList.add('pageActive');
 
         setCurrentPage(pageNumber);
+
+        console.log(pageNumber);
     }
 
     const deleteOneMovie = (id) => {
@@ -229,6 +224,7 @@ const Movies = () => {
                     totalPosts={isSorted()}
                     paginate={paginate}
                     sortedData={sortedData}
+                    currentPage={currentPage}
                 />
             </div>
         </div>
