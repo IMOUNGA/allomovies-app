@@ -8,10 +8,10 @@ Je m'appelle Romann et je suis un développeur Junior souhaitant se spécialiser
 J'ai déjà eu l'opportunité de réaliser des projets sous Angular (le dernier - pizzalekiosque.fr) et aujourd'hui,
 vous m'offrez peut-être la possibilité de me diriger sur REACT.
 
-Je n'avais jamais eu l'occasion de travailler avec REACT. Je n'ai donc pas eu le temps de tous peaufiner d'autant plus que 
+Je n'avais jamais eu l'occasion de travailler avec REACT. Je n'ai donc pas eu le temps de tout peaufiner d'autant plus que 
 je suis actuellement en poste dans une autre entreprise. J'ai donc relevé le défi accompagné de mon meilleur ami : LA DOC !
 
-J'espère que mes efforts vous montrerons ma volonté de vouloir exceller dans cette technologie et donc d'intégrer
+J'espère que mes efforts vous prouveront ma volonté de vouloir exceller dans cette technologie et donc d'intégrer
 votre équipe.
 
 
@@ -30,7 +30,6 @@ votre équipe.
 [x] Système de pagination : Choix du nombre d'élements affichés par page (4, 8 ou 12) <br>
 
 <b>Améliorer/Bugs</b> <br>
-[*] Système de pagination : Boutons précédent/suivant au lieu de 1,2,3,etc <br>
 [*] <b>Bug</b> -> Selectionner 8 element par page / Aller en page 2 / Selectionner 12 element par page. Faire en sorte de revenir
 à la page 1 a chaque changement de nombre d'elements<br>
 [*] <b>Bug</b> -> Non respect de la pagination lorsque l'on active tous les filtres <br>
