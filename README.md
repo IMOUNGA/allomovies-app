@@ -1,20 +1,3 @@
-# Particeep - React Interview
-
-
-# Qui suis-je 🤓
-Hello !
-
-Je m'appelle Romann et je suis un développeur Junior souhaitant se spécialiser dans les technologies JS.
-J'ai déjà eu l'opportunité de réaliser des projets sous Angular (le dernier - pizzalekiosque.fr) et aujourd'hui,
-vous m'offrez peut-être la possibilité de me diriger sur REACT.
-
-Je n'avais jamais eu l'occasion de travailler avec REACT. Je n'ai donc pas eu le temps de tout peaufiner d'autant plus que 
-je suis actuellement en poste dans une autre entreprise. J'ai donc relevé le défi accompagné de mon meilleur ami : LA DOC !
-
-J'espère que mes efforts vous prouveront ma volonté de vouloir exceller dans cette technologie et donc d'intégrer
-votre équipe.
-
-
 # Le projet 💻
 
 <b>Terminés</b> <br>
